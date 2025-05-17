@@ -7,14 +7,19 @@ import sixthCat from "../images/6.jpg";
 
 function Home() {
   return (
-    <div className="home d-flex justify-content-center align-items-end" style={{height:"100vh"}}>
-      <img src={fisrtCat} alt="first cat" />
-      <img src={secondCat} alt="secondCat" />
-      <img src={thirdCat} alt="thirdCat" />
-      <img src={forthCat} alt="forthCat" />
-      <img src={fifthCat} alt="fifthCat" />
-      <img src={sixthCat} alt="sixthCat" />
-      
+    <div className="home" style={{ height: "100vh" }}>
+        <h1 className="d-flex justify-content-center align-items-end" style={{ height: "19%", fontSize:"82px"}}>Cat Cafe</h1>
+      <div
+        className="home d-flex justify-content-center align-items-end "
+        style={{ height: "80%", borderBottom: "2px solid" }}
+      >
+        <img src={fisrtCat} alt="first cat" />
+        <img src={secondCat} alt="secondCat" />
+        <img src={thirdCat} alt="thirdCat" />
+        <img src={forthCat} alt="forthCat" />
+        <img src={fifthCat} alt="fifthCat" />
+        <img src={sixthCat} alt="sixthCat" />
+      </div>
     </div>
   );
 }
