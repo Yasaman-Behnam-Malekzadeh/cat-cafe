@@ -11,8 +11,8 @@ function Home() {
   return (
     <div className="home" style={{ height: "100vh" }}>
       <h1
-        className="d-flex justify-content-center align-items-end"
-        style={{ height: "15%", fontSize: "82px" }}
+        className="d-flex justify-content-center align-items-end "
+        style={{font: "italic small-caps bold 102px cursive", height: "15%" }}
       >
         Cat Cafe
       </h1>
