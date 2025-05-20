@@ -36,14 +36,15 @@ function Home() {
         }}
       >
         {showMewo ? (
-          <div className="d-flex justify-content-center align-items-center h2">
+          <div  style={{ font: "italic small-caps bold 32px cursive" }}
+           className="d-flex justify-content-center align-items-center ">
             <img
               src={cloud}
               alt="cloud"
               className="position-absolute "
               style={{ zIndex: "-1" }}
             />
-            Mewooooo
+            ...Mewooooo
           </div>
         ) : null}
       </div>
@@ -52,12 +53,12 @@ function Home() {
         className=" d-flex justify-content-center align-items-end "
         style={{ height: "40%" }}
       >
-        <img src={fisrtCat} alt="first cat" onClick={handleClickMewo} />
-        <img src={secondCat} alt="secondCat" onClick={handleClickMewo} />
-        <img src={thirdCat} alt="thirdCat" onClick={handleClickMewo} />
-        <img src={forthCat} alt="forthCat" onClick={handleClickMewo} />
-        <img src={fifthCat} alt="fifthCat" onClick={handleClickMewo} />
-        <img src={sixthCat} alt="sixthCat" onClick={handleClickMewo} />
+        <img src={fisrtCat} alt="first cat" onClick={handleClickMewo} style={{ cursor: "pointer" }}/>
+        <img src={secondCat} alt="secondCat" onClick={handleClickMewo} style={{ cursor: "pointer" }}/>
+        <img src={thirdCat} alt="thirdCat" onClick={handleClickMewo} style={{ cursor: "pointer" }}/>
+        <img src={forthCat} alt="forthCat" onClick={handleClickMewo} style={{ cursor: "pointer" }}/>
+        <img src={fifthCat} alt="fifthCat" onClick={handleClickMewo} style={{ cursor: "pointer" }}/>
+        <img src={sixthCat} alt="sixthCat" onClick={handleClickMewo} style={{ cursor: "pointer" }}/>
       </div>
       <div
         style={{
