@@ -13,6 +13,7 @@ function Menu() {
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
+        backgroundPositionX:"right",
         height: "100vh",
       }}
     >
@@ -26,14 +27,14 @@ function Menu() {
         <div className="row mb-4">
           <img
             src={cake}
-            className="col rounded-circle bg-light border border-5"
+            className="col rounded-circle bg-light "
             height="200px"
             width="200px"
             alt="cake"
           />
           <img
             src={wafel}
-            className="col rounded-circle bg-light border border-5"
+            className="col rounded-circle bg-light"
             height="200px"
             width="200px"
             alt="wafel"
@@ -42,14 +43,14 @@ function Menu() {
         <div className="row">
           <img
             src={capochino}
-            className="col rounded-circle bg-light border border-5 mr-3"
+            className="col rounded-circle bg-light mr-3"
             height="200px"
             width="200px"
             alt="capochino"
           />
           <img
             src={pancake}
-            className="col rounded-circle bg-light border border-5"
+            className="col rounded-circle bg-light"
             height="200px"
             width="200px"
             alt="pancake"
