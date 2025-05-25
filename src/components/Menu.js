@@ -21,7 +21,6 @@ function Menu() {
           img.style.transition = "transform 3s ease-in-out";
           img.style.transform = `rotate(${direction * 360}deg)`;
 
-          // Reset after 3s
           setTimeout(() => {
             img.style.transform = "rotate(0deg)";
           }, 3000);
@@ -58,44 +57,56 @@ function Menu() {
           Menu:
         </h1>
         <div className="row mb-4">
-          <img
-            src={cake}
-            ref={(el) => setRef(el, 0)}
-            className="col rounded-circle bg-light"
-            height="200px"
-            width="200px"
-            alt="cake"
-            style={{ cursor: "pointer" }}
-          />
-          <img
-            src={wafel}
-            ref={(el) => setRef(el, 1)}
-            className="col rounded-circle bg-light"
-            height="200px"
-            width="200px"
-            alt="wafel"
-            style={{ cursor: "pointer" }}
-          />
+          <div className="d-flex flex-column align-items-center col">
+            <img
+              src={cake}
+              ref={(el) => setRef(el, 0)}
+              className="col rounded-circle bg-light"
+              height="200px"
+              width="200px"
+              alt="cake"
+              style={{ cursor: "pointer" }}
+            />
+            <span style={{ font: "italic small-caps bold 20px cursive" }}>Types of cakes</span>
+          </div>
+          <div  className="d-flex flex-column align-items-center col">
+            <img
+              src={wafel}
+              ref={(el) => setRef(el, 1)}
+              className="col rounded-circle bg-light"
+              height="200px"
+              width="200px"
+              alt="wafel"
+              style={{ cursor: "pointer" }}
+            />
+            <span style={{ font: "italic small-caps bold 20px cursive" }}>Waffel with topping</span>
+          </div>
         </div>
-        <div className="row">
-          <img
-            src={capochino}
-            ref={(el) => setRef(el, 2)}
-            className="col rounded-circle bg-light"
-            height="200px"
-            width="200px"
-            alt="capochino"
-            style={{ cursor: "pointer" }}
-          />
-          <img
-            src={pancake}
-            ref={(el) => setRef(el, 3)}
-            className="col rounded-circle bg-light"
-            height="200px"
-            width="200px"
-            alt="pancake"
-            style={{ cursor: "pointer" }}
-          />
+        <div className="row mb-4">
+          <div  className="d-flex flex-column align-items-center col">
+            <img
+              src={capochino}
+              ref={(el) => setRef(el, 2)}
+              className="col rounded-circle bg-light"
+              height="200px"
+              width="200px"
+              alt="capochino"
+              style={{ cursor: "pointer" }}
+            />
+            <span style={{ font: "italic small-caps bold 20px cursive" }}>Types of Coffee</span>
+          </div>
+          <div  className="d-flex flex-column align-items-center col">
+            <img
+              src={pancake}
+              ref={(el) => setRef(el, 3)}
+              className="col rounded-circle bg-light"
+              height="200px"
+              width="200px"
+              alt="pancake"
+              style={{ cursor: "pointer" }}
+            />
+            <span style={{ font: "italic small-caps bold 20px cursive" }}>Pancake with topping</span>
+          </div>
         </div>
       </div>
       <div>
