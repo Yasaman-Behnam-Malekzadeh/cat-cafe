@@ -1,20 +1,20 @@
 import bgMenu from "../images/bg-menu.jpeg";
 
-function Contact() {
+function FunFacts() {
   return (
     <div
-      className="menu d-flex justify-content-around align-items-center"
+      className="fun-facts"
       style={{
         backgroundImage: `url(${bgMenu})`,
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center left",
+        backgroundPosition: "center right",
         height: "100vh",
       }}
     >
-      test
+      test testtest
     </div>
   );
 }
 
-export default Contact;
+export default FunFacts;

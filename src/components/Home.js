@@ -8,7 +8,7 @@ import sixthCat from "../images/6.jpg";
 import bgWidth from "../images/bg-width.jpeg";
 import cloud from "../images/cloud.jpeg";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 function Home() {
   const [showMewo, setShowMewo] = useState(false);
