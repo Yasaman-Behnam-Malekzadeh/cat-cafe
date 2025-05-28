@@ -9,7 +9,6 @@ import bgWidth from "../images/bg-width-opp.jpeg";
 function Menu() {
   return (
     <div>
-      {/* Top Stripe (bgWidth) */}
       <div
         style={{
           backgroundImage: `url(${bgWidth})`,
@@ -19,8 +18,6 @@ function Menu() {
           backgroundRepeat: "repeat-x",
         }}
       />
-
-      {/* Main Menu Section */}
       <div
         className="menu d-flex justify-content-around align-items-center"
         style={{
@@ -31,18 +28,14 @@ function Menu() {
           height: "100vh",
         }}
       >
-        {/* Button moved to left */}
         <div>
-          <a
-            href="#"
+          <button
             style={{ font: "italic small-caps bold 32px cursive" }}
-            className="btn btn-lg btn-light border border-5"
+            className="btn btn-lg btn-light border border-5" 
           >
             Show Menu
-          </a>
+          </button>
         </div>
-
-        {/* Images moved to right */}
         <div>
           <h1
             className="mb-5"
