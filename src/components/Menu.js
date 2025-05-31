@@ -4,7 +4,7 @@ import cake from "../images/cake.png";
 import wafel from "../images/waffel.png";
 import capochino from "../images/copochino.png";
 import pancake from "../images/pancake.png";
-import bgWidth from "../images/bg-width-opp.jpeg";
+import bgWidth from "../images/bg-width.jpeg";
 
 function Menu() {
   return (

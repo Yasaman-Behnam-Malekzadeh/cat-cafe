@@ -63,7 +63,6 @@ function FunFacts() {
       <div className="d-flex justify-content-around align-items-end">
         <div >
           {" "}
-          {/* Cloud with fact in the center */}
           <div
             style={{
               backgroundImage: `url(${cloud})`,
@@ -80,8 +79,7 @@ function FunFacts() {
           >
             {funFacts[index]}
           </div>
-          {/* Cat image at the bottom */}
-          <div style={{ marginBottom: "-20px", alignSelf: "center" }}>
+          <div style={{ marginBottom: "-30px", alignSelf: "center" }}>
             <img src={catImages[index]} alt={`Cat ${index + 1}`} />
           </div>
         </div>
