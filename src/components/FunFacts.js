@@ -24,11 +24,17 @@ const catImages = [firstCat, secondCat, thirdCat, forthCat, fifthCat, sixthCat];
 
 function FunFacts() {
   const [index, setIndex] = useState(0);
+  // const [fade, setFade] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % catImages.length);
-    }, 10000); // change every 10 seconds
+      // setFade(false); // fade out
+      setTimeout(() => {
+        setIndex((prev) => (prev + 1) % catImages.length);
+        // setFade(true); // fade in
+      }, 500);
+    }, 10000);
+
     return () => clearInterval(interval);
   }, []);
 
@@ -46,16 +52,16 @@ function FunFacts() {
         padding: "2rem",
       }}
     >
-      {/* Title at the top */}
+  
       <h1
         className="m-4"
         style={{ font: "italic small-caps bold 82px cursive" }}
       >
         Fun Facts About Cats
       </h1>
-
+    
       <div className="d-flex justify-content-around align-items-end">
-        <div>
+        <div >
           {" "}
           {/* Cloud with fact in the center */}
           <div
@@ -70,7 +76,6 @@ function FunFacts() {
               justifyContent: "center",
               padding: "20px",
               font: "italic small-caps bold 24px cursive",
-            
             }}
           >
             {funFacts[index]}
