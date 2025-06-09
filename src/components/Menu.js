@@ -31,7 +31,7 @@ function Menu() {
         <div>
           <button
             style={{ font: "italic small-caps bold 32px cursive" }}
-            className="btn btn-lg btn-light border border-5" 
+            className="btn btn-lg btn-light border" 
           >
             Show Menu
           </button>
